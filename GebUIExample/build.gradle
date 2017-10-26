@@ -1,0 +1,27 @@
+plugins {
+    id 'groovy'
+    id 'idea'
+    id 'org.springframework.boot' version '1.5.1.RELEASE'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+ext {
+    springReleaseVersion = '1.5.1.RELEASE'
+}
+
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+
+    // Spring
+    compile "org.springframework.boot:spring-boot-starter-web:${springReleaseVersion}"
+    compile "org.springframework.boot:spring-boot-starter-tomcat:${springReleaseVersion}"
+}
+
+

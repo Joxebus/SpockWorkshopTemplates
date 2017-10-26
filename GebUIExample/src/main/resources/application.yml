@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: GebUIExample
+
+server:
+  port: 8090
+
+#Logging
+logging:
+  file: logs/${spring.application.name}.log
+  path: .
+  level:
+    root: INFO
+    com.manning: DEBUG
